@@ -4,28 +4,24 @@
     box-sizing:border-box;
     
 }
-main{
-    height:100%;
-}
-
-.div2{
+.left-panel{
     background-color:#013243;
     position:relative;
     text-align:center;
     color:white;
 }
-.div2 img{
+.left-panel h1{
+    padding-top:10%;
+}
+.left-panel p{
+    margin-top:20px;
+}
+.left-panel img{
     height:50%;
     width:100%;
     object-fit:cover;
     object-position:bottom;
     margin-top:50px;
-}
-p{
-    margin-top:20px;
-}
-.div2 h1{
-    padding-top:10%;
 }
 label{
     display:block;
@@ -77,11 +73,11 @@ form p1{
     width:50%;
     line-height:25px;
 }
-.div1 h1{
+.right-panel h1{
     padding-left:60px;
 }
 
-.div1{
+.right-panel{
     padding-top:40px;
     padding-bottom:40px;
 }
@@ -90,39 +86,37 @@ span{
 }
 
 @media only screen and (min-width: 600px) {
-    main{
+    .login-form{
         width:70%;
     }
     body{
         background-image:url('Background.png');
-        background-size:fill
-        ;
-        background-position:center;
-
+        background-size:cover;;
+        background-repeat:no-repeat;
         display:flex;
         justify-content:center;
     }
-    .div1{
+    .right-panel{
         background-color:white;
-
     }
   }
   @media only screen and (min-width: 1000px) {
-    main{
+    .login-form{
        width:70%;
-        height:70%;
+        height:500px;
         display:flex;
     }
     body{
         background-image:url('Background.png');
+        height:100%;
         display:flex;
         justify-content:center;
         align-items:center;
     }
-    .div2{
+    .left-panel{
         width:50%;
     }
-    .div2 img{
+    .left-panel img{
         height:90%;
         width:100%;
         position:absolute;
@@ -131,7 +125,7 @@ span{
         object-fit:contain;
         
     }
-    .div1 h1{
+    .right-panel h1{
         padding-left:79px;
     }
   }
